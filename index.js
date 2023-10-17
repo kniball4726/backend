@@ -1,5 +1,5 @@
-const servidor = require("./conexiones/Server");
-const database = require("./conexiones/conexion");
+const servidor = require("./Server");
+const database = require("./conec");
 
 servidor();
 database();
