@@ -23,8 +23,8 @@ const Productos = require('../models/Producto')
     const mostrarProductos = async(req, res)=>{
     
     try {
-        const data = await Productos.find({})
-        res.send({data})
+        //const data = await Productos.find({})
+        res.send(await Productos.find({}))
     
     } catch (error) {
         throw new Error("No se puede mostrar datos "+error)    
