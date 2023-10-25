@@ -23,7 +23,7 @@ const Productos = require('../models/Producto')
     const mostrarProductos = async(req, res)=>{
     
     try {
-        const data = await Productos.find()
+        const data = await Productos.find({})
         res.send({data})
     
     } catch (error) {
